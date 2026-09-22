@@ -1,212 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 64 64"
+        width="64"
+        height="64"
+>
+    <defs>
+        <linearGradient
+                id="folderGradient"
+                x1="8"
+                y1="6"
+                x2="55"
+                y2="58"
+                gradientUnits="userSpaceOnUse"
+        >
+            <stop offset="0%" stop-color="#9A6BFF"/>
+            <stop offset="48%" stop-color="#6D5DFC"/>
+            <stop offset="100%" stop-color="#4338CA"/>
+        </linearGradient>
 
-        <title>FileNest Logo</title>
+        <filter
+                id="shadow"
+                x="-20%"
+                y="-20%"
+                width="140%"
+                height="150%"
+        >
+            <feDropShadow
+                    dx="0"
+                    dy="3"
+                    stdDeviation="3"
+                    flood-color="#4F46E5"
+                    flood-opacity="0.30"
+            />
+        </filter>
+    </defs>
 
-        <style>
-            body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #ffffff;
-            font-family: Arial, Helvetica, sans-serif;
-            }
+    <!-- Light rounded background -->
+    <rect
+            x="2"
+            y="2"
+            width="60"
+            height="60"
+            rx="16"
+            fill="#F5F3FF"
+    />
 
-            .filenest-logo {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            }
+    <!-- Folder -->
+    <path
+            d="
+        M10 19
+        C10 14.6 13.6 11 18 11
+        H29
+        C31.3 11 33.2 12 34.7 13.8
+        L39 19
+        H47
+        C51.4 19 55 22.6 55 27
+        V46
+        C55 50.4 51.4 54 47 54
+        H17
+        C12.6 54 9 50.4 9 46
+        V20
+        C9 19.4 9.4 19 10 19
+        Z
+        "
+            fill="url(#folderGradient)"
+            filter="url(#shadow)"
+    />
 
-            .logo-icon {
-            width: 74px;
-            height: 74px;
-            flex-shrink: 0;
-            }
+    <!-- Folder highlight -->
+    <path
+            d="
+        M10 26
+        C10 22.7 12.7 20 16 20
+        H49
+        C51.7 20 54 21.7 55 24
+        V28
+        H10
+        Z
+        "
+            fill="#FFFFFF"
+            opacity="0.15"
+    />
 
-            .logo-content {
-            display: flex;
-            flex-direction: column;
-            }
-
-            .logo-name {
-            margin: 0;
-            font-size: 38px;
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: -1.5px;
-            color: #111827;
-            }
-
-            .logo-name span {
-            background: linear-gradient(
-            135deg,
-            #6d5dfc,
-            #713df2
-            );
-
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            }
-
-            .logo-tagline {
-            margin-top: 7px;
-            font-size: 10px;
-            font-weight: 700;
-            letter-spacing: 2.4px;
-            color: #8b92a5;
-            }
-        </style>
-    </head>
-
-    <body>
-
-        <div class="filenest-logo">
-
-            <svg
-                    class="logo-icon"
-                    viewBox="0 0 100 100"
-                    xmlns="http://www.w3.org/2000/svg"
-            >
-
-                <defs>
-
-                    <linearGradient
-                            id="folderGradient"
-                            x1="0"
-                            y1="0"
-                            x2="1"
-                            y2="1"
-                    >
-                        <stop
-                                offset="0%"
-                                stop-color="#8b5cf6"
-                        />
-
-                        <stop
-                                offset="45%"
-                                stop-color="#6d5dfc"
-                        />
-
-                        <stop
-                                offset="100%"
-                                stop-color="#4338ca"
-                        />
-                    </linearGradient>
-
-                    <filter
-                            id="shadow"
-                            x="-30%"
-                            y="-30%"
-                            width="160%"
-                            height="160%"
-                    >
-                        <feDropShadow
-                                dx="0"
-                                dy="7"
-                                stdDeviation="6"
-                                flood-color="#6557e8"
-                                flood-opacity="0.28"
-                        />
-                    </filter>
-
-                </defs>
-
-
-                <!-- Rounded background -->
-
-                <rect
-                        x="5"
-                        y="5"
-                        width="90"
-                        height="90"
-                        rx="24"
-                        fill="#f5f3ff"
-                />
-
-
-                <!-- Folder -->
-
-                <path
-                        d="
-                M18 30
-                C18 23 23 18 30 18
-                H48
-                C52 18 55 20 58 24
-                L63 30
-                H75
-                C82 30 87 35 87 42
-                V75
-                C87 82 82 87 75 87
-                H29
-                C22 87 17 82 17 75
-                V30
-                Z
-            "
-                        fill="url(#folderGradient)"
-                        filter="url(#shadow)"
-                />
-
-
-                <!-- Folder top highlight -->
-
-                <path
-                        d="
-                M18 40
-                C18 34 23 30 29 30
-                H79
-                C83 30 86 32 87 35
-                L87 43
-                H18
-                Z
-            "
-                        fill="#ffffff"
-                        opacity="0.14"
-                />
-
-
-                <!-- F -->
-
-                <path
-                        d="
-                M37 43
-                C37 39 40 36 44 36
-                H69
-                V46
-                H49
-                V55
-                H65
-                V65
-                H49
-                V81
-                H37
-                Z
-            "
-                        fill="#ffffff"
-                />
-
-            </svg>
-
-
-            <div class="logo-content">
-
-                <h1 class="logo-name">
-                    File<span>Nest</span>
-                </h1>
-
-                <div class="logo-tagline">
-                    SMART FILE TOOLS
-                </div>
-
-            </div>
-
-        </div>
-
-    </body>
-</html>
+    <!-- F -->
+    <path
+            d="
+        M23 27
+        C23 24.8 24.8 23 27 23
+        H43
+        V30
+        H31
+        V35
+        H41
+        V42
+        H31
+        V51
+        H23
+        Z
+        "
+            fill="#FFFFFF"
+    />
+</svg>

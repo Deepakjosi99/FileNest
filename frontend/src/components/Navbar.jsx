@@ -216,11 +216,13 @@ function Navbar() {
                     title="Go to FileNest home"
                 >
 
-                    <div className="brand-logo">
-
-                        F
-
-                    </div>
+                  <div className="brand-logo">
+                      <img
+                          src="/favicon.svg"
+                          alt="FileNest"
+                          className="brand-logo-image"
+                      />
+                  </div>
 
 
                     <div className="brand-text">
