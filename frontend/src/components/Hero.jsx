@@ -1,5 +1,5 @@
 
-import "../css/hero.css";
+import "../css/Hero.css";
 function Hero() {
 
     const scrollToConverter = () => {
