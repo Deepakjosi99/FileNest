@@ -1,0 +1,1072 @@
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    position: relative;
+
+    overflow: hidden;
+
+    padding:
+        95px 20px
+        90px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8f7ff 55%,
+            #f6f7fb 100%
+        );
+}
+
+
+/* =========================================
+   BACKGROUND DECORATIONS
+========================================= */
+
+.hero-decoration {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    filter: blur(5px);
+}
+
+
+.hero-decoration-one {
+    width: 420px;
+
+    height: 420px;
+
+    top: -200px;
+
+    right: -120px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(
+                99,
+                88,
+                255,
+                0.13
+            ),
+            transparent 70%
+        );
+}
+
+
+.hero-decoration-two {
+    width: 350px;
+
+    height: 350px;
+
+    bottom: -170px;
+
+    left: -110px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(
+                114,
+                181,
+                255,
+                0.10
+            ),
+            transparent 70%
+        );
+}
+
+
+/* =========================================
+   HERO CONTAINER
+========================================= */
+
+.hero-container {
+    position: relative;
+
+    z-index: 2;
+
+    width:
+        min(
+            1180px,
+            100%
+        );
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(400px, 0.95fr);
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+    min-width: 0;
+}
+
+
+.hero-badge {
+    width: fit-content;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding:
+        8px 13px;
+
+    border:
+        1px solid
+        #e1defe;
+
+    border-radius: 100px;
+
+    background:
+        #f6f4ff;
+
+    color:
+        #5d52dd;
+
+    font-size: 12px;
+
+    font-weight: 750;
+
+    margin-bottom: 22px;
+}
+
+
+.hero-badge-dot {
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #6558fa;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(
+            101,
+            88,
+            250,
+            0.10
+        );
+}
+
+
+/* =========================================
+   HERO TITLE
+========================================= */
+
+.hero-title {
+    max-width: 650px;
+
+    color: #171b29;
+
+    font-size:
+        clamp(
+            44px,
+            5vw,
+            68px
+        );
+
+    line-height: 1.04;
+
+    letter-spacing:
+        -2.6px;
+
+    font-weight: 850;
+}
+
+
+.hero-title span {
+    display: block;
+
+    margin-top: 7px;
+
+    background:
+        linear-gradient(
+            100deg,
+            #6254f4,
+            #7b5cff,
+            #4d72f3
+        );
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-description {
+    max-width: 610px;
+
+    margin-top: 25px;
+
+    color: #697184;
+
+    font-size: 18px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-actions {
+    margin-top: 32px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+}
+
+
+.hero-primary-button,
+.hero-secondary-button {
+    min-height: 52px;
+
+    padding:
+        0 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    border-radius: 13px;
+
+    font-size: 14px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.hero-primary-button {
+    border: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6558fa,
+            #5145e5
+        );
+
+    color: white;
+
+    box-shadow:
+        0 11px 25px
+        rgba(
+            92,
+            82,
+            245,
+            0.24
+        );
+}
+
+
+.hero-primary-button:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 32px
+        rgba(
+            92,
+            82,
+            245,
+            0.34
+        );
+}
+
+
+.hero-primary-button span {
+    font-size: 18px;
+
+    transition:
+        transform 0.2s;
+}
+
+
+.hero-primary-button:hover span {
+    transform:
+        translateX(4px);
+}
+
+
+.hero-secondary-button {
+    border:
+        1px solid
+        #dadde8;
+
+    background: white;
+
+    color: #434b5d;
+}
+
+
+.hero-secondary-button:hover {
+    border-color: #aaa5f8;
+
+    color: #5c52f5;
+
+    background: #fbfaff;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* =========================================
+   HERO FEATURES
+========================================= */
+
+.hero-features {
+    margin-top: 28px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        13px 22px;
+}
+
+
+.hero-feature {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #697184;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+.hero-check {
+    width: 21px;
+
+    height: 21px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #edfaf3;
+
+    color: #1c9b61;
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================
+   RIGHT HERO VISUAL
+========================================= */
+
+.hero-visual {
+    position: relative;
+
+    min-width: 0;
+
+    padding:
+        30px 10px;
+}
+
+
+/* =========================================
+   TOOL WINDOW
+========================================= */
+
+.hero-tool-window {
+    position: relative;
+
+    max-width: 480px;
+
+    margin-left: auto;
+
+    background: white;
+
+    border:
+        1px solid
+        #e7e8ef;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 70px
+        rgba(
+            27,
+            32,
+            72,
+            0.14
+        );
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.hero-tool-window:hover {
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 35px 80px
+        rgba(
+            27,
+            32,
+            72,
+            0.18
+        );
+}
+
+
+/* =========================================
+   WINDOW HEADER
+========================================= */
+
+.tool-window-header {
+    min-height: 52px;
+
+    padding:
+        0 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content:
+        space-between;
+
+    border-bottom:
+        1px solid
+        #eff0f4;
+
+    background: #fcfcfe;
+}
+
+
+.window-dots {
+    display: flex;
+
+    gap: 6px;
+}
+
+
+.window-dots span {
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+}
+
+
+.window-dots span:nth-child(1) {
+    background: #ff7068;
+}
+
+
+.window-dots span:nth-child(2) {
+    background: #ffca55;
+}
+
+
+.window-dots span:nth-child(3) {
+    background: #4acb76;
+}
+
+
+.window-title {
+    color: #9aa0ad;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   WINDOW CONTENT
+========================================= */
+
+.tool-window-content {
+    padding: 28px;
+}
+
+
+/* =========================================
+   FILE CARD
+========================================= */
+
+.hero-file-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 14px;
+
+    border:
+        1px solid
+        #e8e9ef;
+
+    border-radius: 14px;
+
+    background: white;
+}
+
+
+.hero-file-icon {
+    width: 44px;
+
+    height: 44px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: #f0eeff;
+
+    color: #5b50ed;
+
+    font-size: 10px;
+
+    font-weight: 850;
+}
+
+
+.hero-file-card > div:nth-child(2) {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.hero-file-card strong {
+    color: #303747;
+
+    font-size: 13px;
+}
+
+
+.hero-file-card span {
+    margin-top: 3px;
+
+    color: #979dad;
+
+    font-size: 10px;
+}
+
+
+.file-success {
+    width: 25px;
+
+    height: 25px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #eaf9f1;
+
+    color: #20975f;
+
+    font-size: 11px;
+
+    font-weight: 900;
+}
+
+
+/* =========================================
+   CONVERSION PROGRESS
+========================================= */
+
+.conversion-line {
+    padding:
+        21px 9px;
+}
+
+
+.conversion-line-bar {
+    width: 100%;
+
+    height: 6px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #eeeeF4;
+}
+
+
+.conversion-line-bar span {
+    display: block;
+
+    width: 75%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6558fa,
+            #8a72ff
+        );
+
+    animation:
+        heroProgress
+        2.5s ease-in-out
+        infinite alternate;
+}
+
+
+@keyframes heroProgress {
+
+    from {
+        width: 42%;
+    }
+
+    to {
+        width: 92%;
+    }
+
+}
+
+
+.conversion-text {
+    margin-top: 9px;
+
+    color: #999fad;
+
+    text-align: center;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   PDF RESULT
+========================================= */
+
+.result-file {
+    background: #fbfffd;
+
+    border-color: #dff2e8;
+}
+
+
+.pdf-result-icon {
+    background: #fff0f1;
+
+    color: #dc4650;
+}
+
+
+/* =========================================
+   DEMO BUTTON
+========================================= */
+
+.hero-download-demo {
+    width: 100%;
+
+    min-height: 45px;
+
+    margin-top: 19px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+
+    border-radius: 11px;
+
+    background: #f1efff;
+
+    color: #5c52f5;
+
+    font-size: 12px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+
+.hero-download-demo:hover {
+    background: #e8e5ff;
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================
+   FLOATING CARDS
+========================================= */
+
+.floating-tool-card {
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 170px;
+
+    padding:
+        11px 13px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.95
+        );
+
+    border:
+        1px solid
+        #e6e7ee;
+
+    border-radius: 13px;
+
+    box-shadow:
+        0 13px 30px
+        rgba(
+            26,
+            31,
+            65,
+            0.12
+        );
+
+    animation:
+        floatingCard
+        4s ease-in-out
+        infinite;
+}
+
+
+.floating-tool-card strong {
+    display: block;
+
+    color: #313747;
+
+    font-size: 11px;
+}
+
+
+.floating-tool-card span {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #979dab;
+
+    font-size: 9px;
+}
+
+
+.floating-icon {
+    width: 34px;
+
+    height: 34px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 10px;
+
+    background: #f0efff;
+
+    color: #5c52f5;
+
+    font-size: 16px;
+
+    font-weight: 850;
+}
+
+
+.security-icon {
+    background: #ebfaf2;
+
+    color: #1c955d;
+}
+
+
+.resize-floating-card {
+    left: -55px;
+
+    top: 25px;
+}
+
+
+.privacy-floating-card {
+    right: -38px;
+
+    bottom: 18px;
+
+    animation-delay:
+        0.8s;
+}
+
+
+@keyframes floatingCard {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-7px);
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (
+    max-width: 1050px
+) {
+
+    .hero-container {
+        grid-template-columns:
+            1fr 0.9fr;
+
+        gap: 45px;
+    }
+
+
+    .hero-title {
+        font-size: 52px;
+    }
+
+
+    .floating-tool-card {
+        display: none;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE / SMALL TABLET
+========================================= */
+
+@media (
+    max-width: 850px
+) {
+
+    .hero {
+        padding:
+            70px 20px
+            65px;
+    }
+
+
+    .hero-container {
+        grid-template-columns:
+            1fr;
+
+        gap: 55px;
+    }
+
+
+    .hero-content {
+        text-align: center;
+    }
+
+
+    .hero-badge {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-title {
+        max-width: 700px;
+
+        margin: auto;
+
+        font-size:
+            clamp(
+                40px,
+                9vw,
+                58px
+            );
+    }
+
+
+    .hero-description {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+
+    .hero-features {
+        justify-content: center;
+    }
+
+
+    .hero-tool-window {
+        max-width: 520px;
+
+        margin:
+            0 auto;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (
+    max-width: 520px
+) {
+
+    .hero {
+        padding:
+            55px 16px
+            50px;
+    }
+
+
+    .hero-title {
+        font-size: 41px;
+
+        letter-spacing:
+            -1.6px;
+    }
+
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+
+    .hero-primary-button,
+    .hero-secondary-button {
+        width: 100%;
+    }
+
+
+    .hero-features {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        width: fit-content;
+
+        margin:
+            25px auto
+            0;
+    }
+
+
+    .hero-visual {
+        padding: 0;
+    }
+
+
+    .tool-window-content {
+        padding: 19px 15px;
+    }
+
+}

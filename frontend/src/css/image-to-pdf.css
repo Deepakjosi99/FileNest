@@ -1,0 +1,1105 @@
+/* =========================================
+   CONVERTER CARD
+========================================= */
+
+.converter-card {
+    width:
+        min(
+            850px,
+            calc(100% - 30px)
+        );
+
+    margin:
+        30px auto
+        60px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 15px 50px
+        rgba(
+            24,
+            32,
+            75,
+            0.10
+        );
+}
+
+
+/* =========================================
+   CONVERTER HEADER
+========================================= */
+
+.converter-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.tool-label {
+    color: #5c52f5;
+
+    font-size: 12px;
+
+    font-weight: 750;
+
+    letter-spacing: 1px;
+}
+
+
+.converter-header h2 {
+    margin-top: 8px;
+
+    font-size: 32px;
+
+    color: #182033;
+}
+
+
+.converter-header p {
+    margin-top: 9px;
+
+    color: #727b90;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   UPLOAD AREA
+========================================= */
+
+.upload-area {
+    min-height: 250px;
+
+    border:
+        2px dashed
+        #c7c8ef;
+
+    border-radius: 18px;
+
+    background: #fafaff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition:
+        all 0.2s ease;
+
+    padding: 30px;
+}
+
+
+.upload-area:hover {
+    border-color: #5c52f5;
+
+    background: #f7f6ff;
+}
+
+
+.upload-area-active {
+    border-color: #5c52f5;
+
+    background: #eeecff;
+
+    transform: scale(1.01);
+}
+
+
+.upload-area input {
+    display: none;
+}
+
+
+.upload-circle {
+    width: 56px;
+
+    height: 56px;
+
+    border-radius: 50%;
+
+    background: #5c52f5;
+
+    color: white;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 31px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.upload-area:hover
+.upload-circle {
+    transform:
+        scale(1.07);
+}
+
+
+.upload-area h3 {
+    font-size: 20px;
+}
+
+
+.upload-area p {
+    color: #8a91a2;
+
+    margin-top: 6px;
+
+    font-size: 14px;
+}
+
+
+.select-button {
+    margin-top: 18px;
+
+    background: #5c52f5;
+
+    color: white;
+
+    padding:
+        10px 20px;
+
+    border-radius: 10px;
+
+    font-weight: 650;
+
+    transition:
+        0.2s;
+}
+
+
+.upload-area:hover
+.select-button {
+    background: #5045e8;
+}
+
+
+/* =========================================
+   IMAGE SECTION
+========================================= */
+
+.images-section {
+    margin-top: 30px;
+}
+
+
+.images-header {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+.images-header strong {
+    font-size: 16px;
+}
+
+
+.images-header p {
+    margin-top: 4px;
+
+    color: #8991a2;
+
+    font-size: 13px;
+}
+
+
+.clear-button {
+    border: none;
+
+    background: transparent;
+
+    color: #d83d48;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+.clear-button:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   IMAGE GRID
+========================================= */
+
+.image-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fill,
+            minmax(
+                150px,
+                1fr
+            )
+        );
+
+    gap: 15px;
+}
+
+
+.preview-card {
+    position: relative;
+
+    border:
+        1px solid
+        #e4e6ed;
+
+    border-radius: 14px;
+
+    background: white;
+
+    overflow: hidden;
+
+    cursor: grab;
+
+    transition:
+        0.2s;
+
+    user-select: none;
+}
+
+
+.preview-card:hover {
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            20,
+            30,
+            70,
+            0.10
+        );
+}
+
+
+.preview-card:active {
+    cursor: grabbing;
+}
+
+
+.preview-card img {
+    display: block;
+
+    width: 100%;
+
+    height: 150px;
+
+    object-fit: contain;
+
+    background: #f6f7fa;
+}
+
+
+/* =========================================
+   PAGE NUMBER
+========================================= */
+
+.page-number {
+    position: absolute;
+
+    top: 8px;
+
+    left: 8px;
+
+    width: 29px;
+
+    height: 29px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(
+            25,
+            29,
+            44,
+            0.86
+        );
+
+    color: white;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 12px;
+
+    font-weight: 650;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   PREVIEW INFORMATION
+========================================= */
+
+.preview-info {
+    min-width: 0;
+
+    padding: 11px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.preview-info strong {
+    font-size: 13px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.preview-info span {
+    margin-top: 5px;
+
+    font-size: 11px;
+
+    color: #8c93a3;
+}
+
+
+.original-dimension {
+    color: #777f91 !important;
+
+    margin-top: 6px !important;
+}
+
+
+.result-dimension {
+    color: #5c52f5 !important;
+
+    font-weight: 700;
+
+    margin-top: 3px !important;
+}
+
+
+/* =========================================
+   REMOVE IMAGE
+========================================= */
+
+.remove-image {
+    position: absolute;
+
+    top: 7px;
+
+    right: 7px;
+
+    width: 30px;
+
+    height: 30px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.94
+        );
+
+    color: #d43d49;
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+    line-height: 1;
+
+    box-shadow:
+        0 2px 8px
+        rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+}
+
+
+.remove-image:hover {
+    background: #fff0f1;
+}
+
+
+/* =========================================
+   ADD MORE IMAGES
+========================================= */
+
+.add-more-button {
+    display: block;
+
+    margin-top: 18px;
+
+    width: 100%;
+
+    border:
+        1px dashed
+        #aaaaf2;
+
+    padding: 13px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: #5c52f5;
+
+    cursor: pointer;
+
+    font-weight: 650;
+
+    transition: 0.2s;
+}
+
+
+.add-more-button:hover {
+    background: #f7f6ff;
+
+    border-color: #5c52f5;
+}
+
+
+.add-more-button input {
+    display: none;
+}
+
+
+/* =========================================
+   RESIZE SETTINGS
+========================================= */
+
+.resize-settings {
+    margin-top: 28px;
+
+    padding: 22px;
+
+    border:
+        1px solid
+        #e3e5ee;
+
+    border-radius: 16px;
+
+    background: #fafbff;
+}
+
+
+.settings-title {
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 22px;
+}
+
+
+.settings-title h3 {
+    font-size: 18px;
+}
+
+
+.settings-title p {
+    margin-top: 4px;
+
+    color: #8a91a3;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   RESIZE SWITCH
+========================================= */
+
+.resize-switch {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #5c52f5;
+}
+
+
+.resize-switch input {
+    width: 18px;
+
+    height: 18px;
+
+    cursor: pointer;
+
+    accent-color: #5c52f5;
+}
+
+
+/* =========================================
+   RESIZE CONTENT
+========================================= */
+
+.resize-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.dimension-inputs {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap: 15px;
+}
+
+
+.dimension-input-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.dimension-input-group label {
+    font-size: 13px;
+
+    font-weight: 650;
+
+    color: #555e73;
+}
+
+
+/* =========================================
+   PIXEL INPUT
+========================================= */
+
+.pixel-input {
+    display: flex;
+
+    align-items: center;
+
+    background: white;
+
+    border:
+        1px solid
+        #dadde7;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+.pixel-input:focus-within {
+    border-color: #5c52f5;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            92,
+            82,
+            245,
+            0.08
+        );
+}
+
+
+.pixel-input input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    padding:
+        12px 13px;
+
+    font-size: 15px;
+
+    color: #172033;
+
+    background: transparent;
+}
+
+
+.pixel-input span {
+    padding:
+        0 13px;
+
+    color: #8b92a4;
+
+    font-size: 13px;
+
+    border-left:
+        1px solid
+        #eceef4;
+}
+
+
+/* =========================================
+   ASPECT RATIO
+========================================= */
+
+.ratio-checkbox {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    cursor: pointer;
+
+    color: #555e73;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.ratio-checkbox input {
+    width: 17px;
+
+    height: 17px;
+
+    accent-color: #5c52f5;
+
+    cursor: pointer;
+}
+
+
+.resize-help {
+    margin-top: -10px;
+
+    color: #8a91a3;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+.resize-note {
+    padding:
+        12px 14px;
+
+    background: #f1f0ff;
+
+    border-radius: 10px;
+
+    color: #6d6887;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   PDF SETTINGS
+========================================= */
+
+.pdf-settings {
+    margin-top: 30px;
+
+    padding: 22px;
+
+    border:
+        1px solid
+        #e3e5ee;
+
+    border-radius: 16px;
+
+    background: #fafbff;
+}
+
+
+.settings-grid {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.setting-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.setting-group > label {
+    font-size: 13px;
+
+    color: #555e73;
+
+    font-weight: 650;
+}
+
+
+/* =========================================
+   OPTION BUTTONS
+========================================= */
+
+.option-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.option-button {
+    padding:
+        9px 16px;
+
+    border:
+        1px solid
+        #dadde7;
+
+    background: white;
+
+    color: #555e73;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition:
+        0.2s ease;
+}
+
+
+.option-button:hover {
+    border-color: #5c52f5;
+
+    color: #5c52f5;
+}
+
+
+.option-button.active-option {
+    background: #5c52f5;
+
+    border-color: #5c52f5;
+
+    color: white;
+}
+
+
+.option-button.active-option:hover {
+    background: #5045e8;
+
+    color: white;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-message {
+    margin-top: 18px;
+
+    background: #fff0f1;
+
+    border:
+        1px solid
+        #ffcfd3;
+
+    color: #b62834;
+
+    padding:
+        12px 15px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CONVERT BUTTON
+========================================= */
+
+.convert-button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6558fa,
+            #5145e5
+        );
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s,
+        opacity 0.2s;
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            92,
+            82,
+            245,
+            0.20
+        );
+}
+
+
+.convert-button:hover:not(:disabled) {
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 11px 25px
+        rgba(
+            92,
+            82,
+            245,
+            0.28
+        );
+}
+
+
+.convert-button:disabled {
+    background: #babdcc;
+
+    box-shadow: none;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   PRIVACY
+========================================= */
+
+.privacy-text {
+    text-align: center;
+
+    margin-top: 16px;
+
+    color: #737b8d;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (
+    max-width: 768px
+) {
+
+    .converter-card {
+        padding:
+            30px 20px;
+    }
+
+
+    .converter-header h2 {
+        font-size: 28px;
+    }
+
+
+    .upload-area {
+        min-height: 220px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (
+    max-width: 600px
+) {
+
+    .converter-card {
+        width:
+            calc(
+                100% - 20px
+            );
+
+        margin-top: 18px;
+
+        padding:
+            24px 15px;
+
+        border-radius: 18px;
+    }
+
+
+    .converter-header h2 {
+        font-size: 25px;
+    }
+
+
+    .converter-header p {
+        font-size: 14px;
+    }
+
+
+    .upload-area {
+        min-height: 210px;
+
+        padding: 20px;
+    }
+
+
+    .image-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+        gap: 10px;
+    }
+
+
+    .preview-card img {
+        height: 120px;
+    }
+
+
+    .preview-info {
+        padding: 8px;
+    }
+
+
+    .images-header {
+        align-items:
+            flex-start;
+    }
+
+
+    .resize-settings,
+    .pdf-settings {
+        padding:
+            18px 14px;
+    }
+
+
+    .settings-title {
+        align-items:
+            flex-start;
+    }
+
+
+    .dimension-inputs {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .option-button {
+        flex: 1;
+
+        min-width: 75px;
+    }
+
+}

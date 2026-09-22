@@ -1,0 +1,716 @@
+/* =========================================
+   SPLIT PDF CARD
+========================================= */
+
+.split-pdf-card {
+    width:
+        min(
+            850px,
+            calc(100% - 32px)
+        );
+
+    margin:
+        60px auto
+        80px;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 15px 50px
+        rgba(
+            24,
+            32,
+            75,
+            0.10
+        );
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.split-pdf-header {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.split-tool-label {
+    color: #5c52f5;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.split-pdf-header h1 {
+    margin-top: 8px;
+
+    color: #182033;
+
+    font-size: 34px;
+
+    letter-spacing: -0.7px;
+}
+
+
+.split-pdf-header p {
+    margin-top: 8px;
+
+    color: #727b90;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   UPLOAD
+========================================= */
+
+.split-upload-area {
+    min-height: 240px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border:
+        2px dashed
+        #c7c8ef;
+
+    border-radius: 18px;
+
+    background: #fafaff;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+
+.split-upload-area:hover {
+    border-color: #5c52f5;
+
+    background: #f7f6ff;
+}
+
+
+.split-upload-active {
+    border-color: #5c52f5;
+
+    background: #eeecff;
+}
+
+
+.split-upload-area input {
+    display: none;
+}
+
+
+.split-upload-icon {
+    width: 58px;
+
+    height: 58px;
+
+    margin-bottom: 15px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6558fa,
+            #5145e5
+        );
+
+    color: white;
+
+    font-size: 31px;
+}
+
+
+.split-upload-area h3 {
+    font-size: 20px;
+}
+
+
+.split-upload-area p {
+    margin-top: 6px;
+
+    color: #8991a2;
+
+    font-size: 13px;
+}
+
+
+.split-select-button {
+    margin-top: 18px;
+
+    padding:
+        10px 20px;
+
+    border-radius: 10px;
+
+    background: #5c52f5;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   SELECTED PDF
+========================================= */
+
+.split-selected-file {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 15px;
+
+    border:
+        1px solid
+        #e2e5ed;
+
+    border-radius: 14px;
+
+    background: #fbfbfe;
+}
+
+
+.split-pdf-icon {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: #fff0f1;
+
+    color: #d94a54;
+
+    font-size: 10px;
+
+    font-weight: 850;
+}
+
+
+.split-file-info {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.split-file-info strong {
+    overflow: hidden;
+
+    color: #303747;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    font-size: 14px;
+}
+
+
+.split-file-info span {
+    margin-top: 4px;
+
+    color: #9097a7;
+
+    font-size: 11px;
+}
+
+
+.split-remove-file {
+    width: 32px;
+
+    height: 32px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #fff0f1;
+
+    color: #d44450;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   OPTIONS
+========================================= */
+
+.split-options {
+    margin-top: 28px;
+
+    padding: 22px;
+
+    border:
+        1px solid
+        #e3e5ee;
+
+    border-radius: 16px;
+
+    background: #fafbff;
+}
+
+
+.split-options-header h3 {
+    color: #303747;
+
+    font-size: 17px;
+}
+
+
+.split-options-header p {
+    margin-top: 4px;
+
+    color: #8b92a2;
+
+    font-size: 12px;
+}
+
+
+.split-mode-grid {
+    margin-top: 18px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap: 10px;
+}
+
+
+.split-mode-card {
+    min-width: 0;
+
+    padding: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    border:
+        1px solid
+        #e1e3eb;
+
+    border-radius: 12px;
+
+    background: white;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+}
+
+
+.split-mode-card:hover {
+    border-color: #bcb7ff;
+
+    background: #f8f7ff;
+}
+
+
+.split-mode-active {
+    border-color: #5c52f5;
+
+    background: #f3f1ff;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(
+            92,
+            82,
+            245,
+            0.07
+        );
+}
+
+
+.split-mode-icon {
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 10px;
+
+    background: #eeecff;
+
+    color: #5c52f5;
+
+    font-size: 11px;
+
+    font-weight: 850;
+}
+
+
+.split-mode-card > div:last-child {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.split-mode-card strong {
+    color: #383f50;
+
+    font-size: 12px;
+}
+
+
+.split-mode-card span {
+    margin-top: 3px;
+
+    color: #9198a7;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.split-input-section {
+    margin-top: 20px;
+}
+
+
+.split-input-section label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #555e73;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.split-input-section input {
+    width: 100%;
+
+    min-height: 46px;
+
+    padding:
+        0 13px;
+
+    border:
+        1px solid
+        #d9dce6;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    color: #242a38;
+
+    background: white;
+
+    font-size: 14px;
+}
+
+
+.split-input-section input:focus {
+    border-color: #5c52f5;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(
+            92,
+            82,
+            245,
+            0.08
+        );
+}
+
+
+.split-input-section input:disabled {
+    background: #f1f2f5;
+
+    cursor: not-allowed;
+}
+
+
+.split-input-section p {
+    margin-top: 7px;
+
+    color: #8b92a2;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   INFO
+========================================= */
+
+.split-info-box {
+    margin-top: 20px;
+
+    padding:
+        13px 14px;
+
+    border-radius: 10px;
+
+    background: #f0efff;
+
+    color: #6a6587;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.split-error {
+    margin-top: 18px;
+
+    padding:
+        12px 14px;
+
+    border:
+        1px solid
+        #ffcfd3;
+
+    border-radius: 10px;
+
+    background: #fff0f1;
+
+    color: #b62834;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   MAIN BUTTON
+========================================= */
+
+.split-main-button {
+    width: 100%;
+
+    min-height: 52px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6558fa,
+            #5145e5
+        );
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 20px
+        rgba(
+            92,
+            82,
+            245,
+            0.20
+        );
+
+    transition:
+        0.2s ease;
+}
+
+
+.split-main-button:hover:not(:disabled) {
+    transform:
+        translateY(-2px);
+}
+
+
+.split-main-button:disabled {
+    background: #babdcc;
+
+    box-shadow: none;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   PRIVACY
+========================================= */
+
+.split-privacy {
+    margin-top: 16px;
+
+    color: #737b8d;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (
+    max-width: 850px
+) {
+
+    .split-pdf-card {
+        width:
+            calc(
+                100% - 30px
+            );
+
+        margin:
+            40px auto
+            60px;
+
+        padding: 30px;
+    }
+
+
+    .split-mode-grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .split-mode-card {
+        min-height: 70px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (
+    max-width: 600px
+) {
+
+    .split-pdf-card {
+        width:
+            calc(
+                100% - 20px
+            );
+
+        margin:
+            24px auto
+            50px;
+
+        padding:
+            24px 14px;
+
+        border-radius: 18px;
+    }
+
+
+    .split-pdf-header h1 {
+        font-size: 27px;
+    }
+
+
+    .split-upload-area {
+        min-height: 210px;
+
+        padding: 20px;
+    }
+
+
+    .split-options {
+        padding:
+            18px 14px;
+    }
+
+
+    .split-mode-card {
+        padding: 12px;
+    }
+
+}

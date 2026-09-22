@@ -1,0 +1,109 @@
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family:
+        Inter,
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f6f7fb;
+
+    color: #172033;
+
+    line-height: 1.5;
+}
+
+
+#root {
+    min-height: 100vh;
+}
+
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+
+button {
+    outline: none;
+}
+
+
+a {
+    color: inherit;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================
+   BASIC PAGE
+========================================= */
+
+.app {
+    min-height: 100vh;
+}
+
+
+main {
+    width: 100%;
+}
+
+
+/* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection {
+    background: #dedaff;
+    color: #332a9c;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f3f4f8;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #c9ccd8;
+    border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aeb2c2;
+}
