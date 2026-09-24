@@ -1,0 +1,494 @@
+/* =========================================
+   TOOL INFORMATION / SEO CONTENT
+========================================= */
+
+.tool-info {
+    width: 100%;
+
+    padding:
+        30px 0
+        80px;
+
+    background: #ffffff;
+}
+
+
+.tool-info-container {
+    width:
+        min(
+            1080px,
+            calc(100% - 40px)
+        );
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.tool-info-intro {
+    max-width: 780px;
+
+    margin:
+        0 auto
+        55px;
+
+    text-align: center;
+}
+
+
+.tool-info-label {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #6255f5;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+}
+
+
+.tool-info-intro h2 {
+    margin:
+        0 0
+        16px;
+
+    color: #171b2d;
+
+    font-size:
+        clamp(
+            27px,
+            4vw,
+            38px
+        );
+
+    line-height: 1.18;
+
+    letter-spacing: -0.8px;
+}
+
+
+.tool-info-intro p {
+    margin: 0;
+
+    color: #687084;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.tool-info-section {
+    margin-top: 52px;
+}
+
+
+.tool-info-section > h2 {
+    margin:
+        0 0
+        22px;
+
+    color: #1b2032;
+
+    font-size: 24px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================
+   STEPS
+========================================= */
+
+.tool-step-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            5,
+            1fr
+        );
+
+    gap: 14px;
+}
+
+
+.tool-step-card {
+    padding: 20px;
+
+    border:
+        1px solid
+        #e8e9f0;
+
+    border-radius: 16px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 7px 20px
+        rgba(
+            30,
+            36,
+            75,
+            0.05
+        );
+}
+
+
+.step-number {
+    width: 32px;
+
+    height: 32px;
+
+    display: grid;
+
+    place-items: center;
+
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+
+    background: #f0eeff;
+
+    color: #5a4df1;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+
+.tool-step-card p {
+    margin: 0;
+
+    color: #596174;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BENEFITS
+========================================= */
+
+.tool-benefits-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            1fr
+        );
+
+    gap: 14px;
+}
+
+
+.tool-benefit {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding:
+        17px 18px;
+
+    border-radius: 14px;
+
+    background: #f8f8fc;
+
+    border:
+        1px solid
+        #ebeaf2;
+}
+
+
+.tool-benefit span {
+    width: 25px;
+
+    height: 25px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: #eaf8f0;
+
+    color: #198754;
+
+    font-size: 12px;
+
+    font-weight: 900;
+}
+
+
+.tool-benefit p {
+    margin: 0;
+
+    color: #4d5569;
+
+    font-size: 13px;
+
+    font-weight: 650;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================
+   FAQ
+========================================= */
+
+.tool-faq-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+
+.tool-faq {
+    overflow: hidden;
+
+    border:
+        1px solid
+        #e6e8ef;
+
+    border-radius: 14px;
+
+    background: white;
+}
+
+
+.tool-faq summary {
+    position: relative;
+
+    padding:
+        18px 48px
+        18px 20px;
+
+    color: #252a3a;
+
+    font-size: 14px;
+
+    font-weight: 750;
+
+    cursor: pointer;
+
+    list-style: none;
+}
+
+
+.tool-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+
+.tool-faq summary::after {
+    content: "+";
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 20px;
+
+    transform:
+        translateY(-50%);
+
+    color: #6255f5;
+
+    font-size: 22px;
+
+    font-weight: 500;
+}
+
+
+.tool-faq[open]
+summary::after {
+    content: "−";
+}
+
+
+.tool-faq p {
+    margin: 0;
+
+    padding:
+        0 20px
+        20px;
+
+    color: #6c7384;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   PRIVACY BOX
+========================================= */
+
+.tool-privacy-box {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-top: 52px;
+
+    padding: 24px;
+
+    border:
+        1px solid
+        #dcefe5;
+
+    border-radius: 18px;
+
+    background: #f5fcf8;
+}
+
+
+.tool-privacy-icon {
+    width: 44px;
+
+    height: 44px;
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 13px;
+
+    background: white;
+
+    font-size: 19px;
+}
+
+
+.tool-privacy-box h3 {
+    margin:
+        1px 0
+        7px;
+
+    color: #26362e;
+
+    font-size: 16px;
+}
+
+
+.tool-privacy-box p {
+    margin: 0;
+
+    color: #617269;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (
+    max-width: 900px
+) {
+
+    .tool-step-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+
+    .tool-benefits-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (
+    max-width: 600px
+) {
+
+    .tool-info {
+        padding:
+            15px 0
+            55px;
+    }
+
+
+    .tool-info-container {
+        width:
+            calc(
+                100% - 24px
+            );
+    }
+
+
+    .tool-info-intro {
+        margin-bottom: 38px;
+    }
+
+
+    .tool-info-intro p {
+        font-size: 14px;
+    }
+
+
+    .tool-info-section {
+        margin-top: 38px;
+    }
+
+
+    .tool-info-section > h2 {
+        font-size: 21px;
+    }
+
+
+    .tool-step-grid,
+    .tool-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .tool-privacy-box {
+        padding: 19px;
+    }
+
+}

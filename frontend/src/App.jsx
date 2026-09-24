@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Seo from "./components/Seo";
+import ToolInfo from "./components/ToolInfo";
 
 import Home from "./pages/Home";
 import ImageToPdfPage from "./pages/ImageToPdfPage";
@@ -55,6 +56,8 @@ function App() {
                 />
 
             </Routes>
+
+            <ToolInfo />
 
             <Footer />
 
