@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Seo from "./components/Seo";
 
 import Home from "./pages/Home";
 import ImageToPdfPage from "./pages/ImageToPdfPage";
@@ -18,6 +19,8 @@ function App() {
         <div className="app">
 
             <Navbar />
+
+            <Seo />
 
             <Routes>
 
