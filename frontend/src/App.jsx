@@ -1,30 +1,14 @@
-import {
-    Route,
-    Routes
-} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
-import Navbar
-    from "./components/Navbar";
-
-import Home
-    from "./pages/Home";
-
-import ImageToPdfPage
-    from "./pages/ImageToPdfPage";
-
-import MergePdfPage
-    from "./pages/MergePdfPage";
-
-import SplitPdfPage
-    from "./pages/SplitPdfPage";
-
-import PdfToJpgPage
-    from "./pages/PdfToJpgPage";
-
-import ResizeImagePage
-    from "./pages/ResizeImagePage";
-
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import ImageToPdfPage from "./pages/ImageToPdfPage";
+import MergePdfPage from "./pages/MergePdfPage";
+import SplitPdfPage from "./pages/SplitPdfPage";
+import PdfToJpgPage from "./pages/PdfToJpgPage";
+import ResizeImagePage from "./pages/ResizeImagePage";
 
 
 function App() {
@@ -35,69 +19,41 @@ function App() {
 
             <Navbar />
 
-
             <Routes>
-
-                {/* HOME */}
 
                 <Route
                     path="/"
-                    element={
-                        <Home />
-                    }
+                    element={<Home />}
                 />
-
-
-                {/* IMAGE TO PDF */}
 
                 <Route
                     path="/image-to-pdf"
-                    element={
-                        <ImageToPdfPage />
-                    }
+                    element={<ImageToPdfPage />}
                 />
-
-
-                {/* RESIZE IMAGE */}
 
                 <Route
                     path="/resize-image"
-                    element={
-                        <ResizeImagePage />
-                    }
+                    element={<ResizeImagePage />}
                 />
-
-
-                {/* MERGE PDF */}
 
                 <Route
                     path="/merge-pdf"
-                    element={
-                        <MergePdfPage />
-                    }
+                    element={<MergePdfPage />}
                 />
-
-
-                {/* SPLIT PDF */}
 
                 <Route
                     path="/split-pdf"
-                    element={
-                        <SplitPdfPage />
-                    }
+                    element={<SplitPdfPage />}
                 />
-
-
-                {/* PDF TO JPG */}
 
                 <Route
                     path="/pdf-to-jpg"
-                    element={
-                        <PdfToJpgPage />
-                    }
+                    element={<PdfToJpgPage />}
                 />
 
             </Routes>
+
+            <Footer />
 
         </div>
 
