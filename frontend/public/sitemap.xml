@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/image-to-pdf</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/resize-image</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/merge-pdf</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/split-pdf</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/pdf-to-jpg</loc>
+    </url>
+
+</urlset>
