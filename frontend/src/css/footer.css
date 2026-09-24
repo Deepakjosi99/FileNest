@@ -1,0 +1,240 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    width: 100%;
+
+    margin-top: 80px;
+
+    background: #111526;
+
+    color: white;
+}
+
+
+.footer-container {
+    width:
+        min(
+            1280px,
+            calc(100% - 50px)
+        );
+
+    margin: 0 auto;
+
+    padding:
+        48px 0
+        24px;
+}
+
+
+/* =========================================
+   FOOTER TOP
+========================================= */
+
+.footer-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    max-width: 420px;
+}
+
+
+.footer-logo {
+    width: 48px;
+
+    height: 48px;
+
+    flex-shrink: 0;
+}
+
+
+.footer-logo img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+.footer-brand h3 {
+    margin: 2px 0 8px;
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+
+.footer-brand p {
+    margin: 0;
+
+    color: #aab0c1;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 8px 20px;
+
+    max-width: 560px;
+}
+
+
+.footer-links button {
+    border: none;
+
+    background: transparent;
+
+    color: #c7ccda;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    padding: 8px 4px;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.footer-links button:hover {
+    color: #8b7cff;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.footer-divider {
+    width: 100%;
+
+    height: 1px;
+
+    margin: 35px 0 22px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.09
+        );
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #868da1;
+
+    font-size: 12px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+.footer-privacy-text {
+    text-align: right;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (
+    max-width: 700px
+) {
+
+    .footer-container {
+        width:
+            calc(
+                100% - 30px
+            );
+
+        padding:
+            38px 0
+            22px;
+    }
+
+
+    .footer-top {
+        flex-direction: column;
+
+        gap: 28px;
+    }
+
+
+    .footer-links {
+        justify-content: flex-start;
+
+        gap: 5px 15px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+
+    .footer-privacy-text {
+        text-align: left;
+    }
+
+}

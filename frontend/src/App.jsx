@@ -24,6 +24,8 @@ import PdfToJpgPage
 import ResizeImagePage
     from "./pages/ResizeImagePage";
 
+import Footer from "./components/Footer";
+
 
 function App() {
 
