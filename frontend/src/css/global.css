@@ -2,6 +2,44 @@
    GLOBAL RESET
 ========================================= */
 
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html,
+body,
+#root {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+img,
+svg {
+    max-width: 100%;
+}
+
+
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;

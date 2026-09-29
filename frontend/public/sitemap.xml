@@ -26,4 +26,20 @@
         <loc>https://tools.fileconverters.workers.dev/pdf-to-jpg</loc>
     </url>
 
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/about</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/privacy</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/terms</loc>
+    </url>
+
+    <url>
+        <loc>https://tools.fileconverters.workers.dev/contact</loc>
+    </url>
+
 </urlset>

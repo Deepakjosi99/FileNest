@@ -7,9 +7,9 @@
 
     margin-top: 80px;
 
-    background: #111526;
+    background: #101425;
 
-    color: white;
+    color: #ffffff;
 }
 
 
@@ -23,23 +23,27 @@
     margin: 0 auto;
 
     padding:
-        48px 0
+        60px 0
         24px;
 }
 
 
 /* =========================================
-   FOOTER TOP
+   GRID
 ========================================= */
 
-.footer-top {
-    display: flex;
+.footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 60px;
 
     align-items: flex-start;
-
-    justify-content: space-between;
-
-    gap: 50px;
 }
 
 
@@ -47,96 +51,213 @@
    BRAND
 ========================================= */
 
-.footer-brand {
-    display: flex;
+.footer-brand-section {
+    max-width: 380px;
+}
 
-    align-items: flex-start;
+
+.footer-brand {
+    display: inline-flex;
+
+    align-items: center;
 
     gap: 14px;
 
-    max-width: 420px;
+    color: inherit;
+
+    text-decoration: none;
 }
 
 
 .footer-logo {
-    width: 48px;
+    width: 54px;
 
-    height: 48px;
+    height: 54px;
+
+    display: block;
+
+    object-fit: contain;
 
     flex-shrink: 0;
 }
 
 
-.footer-logo img {
-    width: 100%;
+.footer-brand h3 {
+    margin: 0;
 
-    height: 100%;
+    color: #ffffff;
 
-    object-fit: contain;
+    font-size: 25px;
 
-    display: block;
+    font-weight: 850;
+
+    line-height: 1;
 }
 
 
-.footer-brand h3 {
-    margin: 2px 0 8px;
+.footer-brand span {
+    display: block;
 
-    font-size: 22px;
+    margin-top: 7px;
+
+    color: #8d95aa;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.8px;
+}
+
+
+.footer-description {
+    margin:
+        22px 0
+        18px;
+
+    max-width: 330px;
+
+    color: #aab1c3;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   TRUST BADGES
+========================================= */
+
+.footer-trust {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.footer-trust span {
+    padding:
+        7px 11px;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+    border-radius: 20px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.04
+        );
+
+    color: #b9c0d2;
+
+    font-size: 11px;
+
+    font-weight: 650;
+}
+
+
+/* =========================================
+   COLUMNS
+========================================= */
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 13px;
+}
+
+
+.footer-column h4 {
+    margin:
+        4px 0
+        10px;
+
+    color: #ffffff;
+
+    font-size: 14px;
 
     font-weight: 800;
 }
 
 
-.footer-brand p {
-    margin: 0;
+.footer-column a {
+    color: #aab1c3;
 
-    color: #aab0c1;
+    font-size: 13px;
 
-    font-size: 14px;
+    font-weight: 550;
 
-    line-height: 1.7;
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.footer-column a:hover {
+    color: #8b7cff;
+
+    transform:
+        translateX(3px);
 }
 
 
 /* =========================================
-   FOOTER LINKS
+   COMING SOON LINK
 ========================================= */
 
-.footer-links {
+.footer-coming {
     display: flex;
 
-    flex-wrap: wrap;
+    align-items: center;
 
-    justify-content: flex-end;
+    gap: 7px;
 
-    gap: 8px 20px;
-
-    max-width: 560px;
-}
-
-
-.footer-links button {
-    border: none;
-
-    background: transparent;
-
-    color: #c7ccda;
+    color: #686f83;
 
     font-size: 13px;
-
-    font-weight: 600;
-
-    cursor: pointer;
-
-    padding: 8px 4px;
-
-    transition:
-        color 0.2s ease;
 }
 
 
-.footer-links button:hover {
-    color: #8b7cff;
+.footer-coming small {
+    padding:
+        2px 6px;
+
+    border-radius: 10px;
+
+    background:
+        rgba(
+            123,
+            109,
+            255,
+            0.12
+        );
+
+    color: #8f83ff;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
 }
 
 
@@ -149,20 +270,22 @@
 
     height: 1px;
 
-    margin: 35px 0 22px;
+    margin:
+        48px 0
+        22px;
 
     background:
         rgba(
             255,
             255,
             255,
-            0.09
+            0.08
         );
 }
 
 
 /* =========================================
-   FOOTER BOTTOM
+   BOTTOM
 ========================================= */
 
 .footer-bottom {
@@ -172,21 +295,60 @@
 
     justify-content: space-between;
 
-    gap: 20px;
-
-    color: #868da1;
-
-    font-size: 12px;
+    gap: 30px;
 }
 
 
 .footer-bottom p {
     margin: 0;
+
+    color: #7e869b;
+
+    font-size: 11px;
 }
 
 
-.footer-privacy-text {
-    text-align: right;
+.footer-bottom-badges {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: #7e869b;
+
+    font-size: 11px;
+}
+
+
+.footer-dot {
+    color: #454c61;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (
+    max-width: 950px
+) {
+
+    .footer-grid {
+        grid-template-columns:
+            2fr
+            1fr
+            1fr;
+
+        gap: 40px;
+    }
+
+
+    .footer-column:last-child {
+        grid-column:
+            2 / 4;
+    }
+
 }
 
 
@@ -195,8 +357,13 @@
 ========================================= */
 
 @media (
-    max-width: 700px
+    max-width: 650px
 ) {
+
+    .footer {
+        margin-top: 55px;
+    }
+
 
     .footer-container {
         width:
@@ -205,22 +372,40 @@
             );
 
         padding:
-            38px 0
+            42px 0
             22px;
     }
 
 
-    .footer-top {
-        flex-direction: column;
+    .footer-grid {
+        grid-template-columns:
+            1fr
+            1fr;
 
-        gap: 28px;
+        gap:
+            36px
+            24px;
     }
 
 
-    .footer-links {
-        justify-content: flex-start;
+    .footer-brand-section {
+        grid-column:
+            1 / -1;
 
-        gap: 5px 15px;
+        max-width: 100%;
+    }
+
+
+    .footer-column:last-child {
+        grid-column:
+            auto;
+    }
+
+
+    .footer-divider {
+        margin:
+            38px 0
+            20px;
     }
 
 
@@ -229,12 +414,31 @@
 
         align-items: flex-start;
 
-        gap: 8px;
+        gap: 10px;
     }
 
 
-    .footer-privacy-text {
-        text-align: left;
+    .footer-bottom-badges {
+        flex-wrap: wrap;
+
+        gap: 6px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (
+    max-width: 430px
+) {
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 32px;
     }
 
 }

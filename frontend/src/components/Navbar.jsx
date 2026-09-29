@@ -1148,19 +1148,17 @@ function Navbar() {
                     ================================= */}
 
                     <button
-
                         type="button"
-
-                        className="nav-normal-link"
-
-                        onClick={() =>
-                            goTo("/")
+                        className={
+                            isActive("/privacy")
+                                ? "nav-normal-link nav-menu-active"
+                                : "nav-normal-link"
                         }
-
+                        onClick={() =>
+                            goTo("/privacy")
+                        }
                     >
-
                         Privacy
-
                     </button>
 
                 </nav>
@@ -1250,6 +1248,10 @@ function Navbar() {
                 mobileOpen && (
 
                     <div className="mobile-navigation">
+
+
+
+
 
 
                         {/* IMAGE TO PDF */}

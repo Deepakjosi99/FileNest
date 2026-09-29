@@ -1,16 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "../css/footer.css";
 
 
 function Footer() {
 
-    const navigate = useNavigate();
-
-
-    const goTo = (path) => {
-
-        navigate(path);
+    const scrollTop = () => {
 
         window.scrollTo({
             top: 0,
@@ -27,111 +22,262 @@ function Footer() {
             <div className="footer-container">
 
 
-                <div className="footer-top">
+                {/* =====================================
+                    FOOTER GRID
+                ===================================== */}
+
+                <div className="footer-grid">
 
 
-                    <div className="footer-brand">
+                    {/* =================================
+                        BRAND
+                    ================================= */}
 
-                        <div className="footer-logo">
+                    <div className="footer-brand-section">
+
+                        <Link
+                            to="/"
+                            className="footer-brand"
+                            onClick={scrollTop}
+                        >
 
                             <img
                                 src="/favicon.svg"
-                                alt="FileNest logo"
+                                alt="FileNest"
+                                className="footer-logo"
                             />
 
-                        </div>
+
+                            <div>
+
+                                <h3>
+                                    FileNest
+                                </h3>
+
+                                <span>
+                                    SMART FILE TOOLS
+                                </span>
+
+                            </div>
+
+                        </Link>
 
 
-                        <div>
+                        <p className="footer-description">
 
-                            <h3>
-                                FileNest
-                            </h3>
+                            Free PDF and image tools
+                            that work directly inside
+                            your browser.
 
-                            <p>
-                                Free PDF and image tools
-                                that work directly in your browser.
-                            </p>
+                        </p>
+
+
+                        <div className="footer-trust">
+
+                            <span>
+                                ✓ Free
+                            </span>
+
+                            <span>
+                                ✓ No signup
+                            </span>
+
+                            <span>
+                                🔒 Private
+                            </span>
 
                         </div>
 
                     </div>
 
 
-                    <div className="footer-links">
 
-                        <button
-                            onClick={() =>
-                                goTo("/")
-                            }
-                        >
-                            Home
-                        </button>
+                    {/* =================================
+                        PDF TOOLS
+                    ================================= */}
+
+                    <div className="footer-column">
+
+                        <h4>
+                            PDF Tools
+                        </h4>
 
 
-                        <button
-                            onClick={() =>
-                                goTo("/image-to-pdf")
-                            }
+                        <Link
+                            to="/image-to-pdf"
+                            onClick={scrollTop}
                         >
                             Image to PDF
-                        </button>
+                        </Link>
 
 
-                        <button
-                            onClick={() =>
-                                goTo("/pdf-to-jpg")
-                            }
-                        >
-                            PDF to JPG
-                        </button>
-
-
-                        <button
-                            onClick={() =>
-                                goTo("/merge-pdf")
-                            }
+                        <Link
+                            to="/merge-pdf"
+                            onClick={scrollTop}
                         >
                             Merge PDF
-                        </button>
+                        </Link>
 
 
-                        <button
-                            onClick={() =>
-                                goTo("/split-pdf")
-                            }
+                        <Link
+                            to="/split-pdf"
+                            onClick={scrollTop}
                         >
                             Split PDF
-                        </button>
+                        </Link>
 
 
-                        <button
-                            onClick={() =>
-                                goTo("/resize-image")
-                            }
+                        <Link
+                            to="/pdf-to-jpg"
+                            onClick={scrollTop}
+                        >
+                            PDF to JPG
+                        </Link>
+
+                    </div>
+
+
+
+                    {/* =================================
+                        IMAGE TOOLS
+                    ================================= */}
+
+                    <div className="footer-column">
+
+                        <h4>
+                            Image Tools
+                        </h4>
+
+
+                        <Link
+                            to="/resize-image"
+                            onClick={scrollTop}
                         >
                             Resize Image
-                        </button>
+                        </Link>
+
+
+                        <Link
+                            to="/image-to-pdf"
+                            onClick={scrollTop}
+                        >
+                            JPG to PDF
+                        </Link>
+
+
+                        <Link
+                            to="/image-to-pdf"
+                            onClick={scrollTop}
+                        >
+                            PNG to PDF
+                        </Link>
+
+
+                        <span className="footer-coming">
+                            Compress Image
+                            <small>
+                                Soon
+                            </small>
+                        </span>
+
+                    </div>
+
+
+
+                    {/* =================================
+                        COMPANY
+                    ================================= */}
+
+                    <div className="footer-column">
+
+                        <h4>
+                            Company
+                        </h4>
+
+
+                        <Link
+                            to="/about"
+                            onClick={scrollTop}
+                        >
+                            About FileNest
+                        </Link>
+
+
+                        <Link
+                            to="/privacy"
+                            onClick={scrollTop}
+                        >
+                            Privacy Policy
+                        </Link>
+
+
+                        <Link
+                            to="/terms"
+                            onClick={scrollTop}
+                        >
+                            Terms of Use
+                        </Link>
+
+
+                        <Link
+                            to="/contact"
+                            onClick={scrollTop}
+                        >
+                            Contact
+                        </Link>
 
                     </div>
 
                 </div>
 
 
+
+                {/* =====================================
+                    DIVIDER
+                ===================================== */}
+
                 <div className="footer-divider"></div>
 
 
+
+                {/* =====================================
+                    BOTTOM
+                ===================================== */}
+
                 <div className="footer-bottom">
 
+
                     <p>
+
                         © {new Date().getFullYear()} FileNest.
                         All rights reserved.
+
                     </p>
 
 
-                    <p className="footer-privacy-text">
-                        Files are processed locally in your browser.
-                    </p>
+                    <div className="footer-bottom-badges">
+
+                        <span>
+                            Browser based
+                        </span>
+
+                        <span className="footer-dot">
+                            •
+                        </span>
+
+                        <span>
+                            No signup
+                        </span>
+
+                        <span className="footer-dot">
+                            •
+                        </span>
+
+                        <span>
+                            Files stay local 🔒
+                        </span>
+
+                    </div>
 
                 </div>
 

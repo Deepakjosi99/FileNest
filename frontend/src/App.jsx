@@ -12,6 +12,11 @@ import SplitPdfPage from "./pages/SplitPdfPage";
 import PdfToJpgPage from "./pages/PdfToJpgPage";
 import ResizeImagePage from "./pages/ResizeImagePage";
 
+import PrivacyPage from "./pages/PrivacyPage"
+import TermsPage from "./pages/TermsPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+
 
 function App() {
 
@@ -55,6 +60,30 @@ function App() {
                     element={<PdfToJpgPage />}
                 />
 
+
+                <Route
+                        path="/privacy"
+                        element={<PrivacyPage />}
+                    />
+
+                 <Route
+                 path="/terms"
+    element={<TermsPage />}
+         />
+
+
+         <Route
+             path="/about"
+             element={<AboutPage />}
+         />
+
+
+         <Route
+             path="/contact"
+             element={<ContactPage />}
+         />
+
+
             </Routes>
 
             <ToolInfo />
@@ -68,4 +97,4 @@ function App() {
 }
 
 
-export default App;
+export default App;11
