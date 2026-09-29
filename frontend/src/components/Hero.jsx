@@ -1,6 +1,36 @@
+import {
+    useNavigate
+} from "react-router-dom";
 
 import "../css/Hero.css";
+
+
 function Hero() {
+
+    const navigate =
+        useNavigate();
+
+
+    /*
+     * =========================================
+     * OPEN RESIZE IMAGE TOOL
+     * =========================================
+     */
+
+    const goToResizeImage = () => {
+
+        navigate(
+            "/resize-image"
+        );
+
+    };
+
+
+    /*
+     * =========================================
+     * SCROLL TO IMAGE TO PDF
+     * =========================================
+     */
 
     const scrollToConverter = () => {
 
@@ -8,6 +38,7 @@ function Hero() {
             document.getElementById(
                 "image-to-pdf"
             );
+
 
         if (converter) {
 
@@ -20,12 +51,19 @@ function Hero() {
     };
 
 
+    /*
+     * =========================================
+     * SCROLL TO TOOLS
+     * =========================================
+     */
+
     const scrollToTools = () => {
 
         const tools =
             document.getElementById(
                 "tools"
             );
+
 
         if (tools) {
 
@@ -53,7 +91,9 @@ function Hero() {
             <div className="hero-container">
 
 
-                {/* LEFT SIDE */}
+                {/* =====================================
+                    LEFT SIDE
+                ===================================== */}
 
                 <div className="hero-content">
 
@@ -90,7 +130,9 @@ function Hero() {
                     </p>
 
 
-                    {/* BUTTONS */}
+                    {/* =================================
+                        BUTTONS
+                    ================================= */}
 
                     <div className="hero-actions">
 
@@ -99,7 +141,7 @@ function Hero() {
                             type="button"
                             className="hero-primary-button"
                             onClick={
-                                scrollToConverter
+                                goToResizeImage
                             }
                         >
 
@@ -127,7 +169,9 @@ function Hero() {
                     </div>
 
 
-                    {/* FEATURES */}
+                    {/* =================================
+                        FEATURES
+                    ================================= */}
 
                     <div className="hero-features">
 
@@ -176,7 +220,9 @@ function Hero() {
 
 
 
-                {/* RIGHT VISUAL */}
+                {/* =====================================
+                    RIGHT VISUAL
+                ===================================== */}
 
                 <div className="hero-visual">
 
@@ -221,6 +267,7 @@ function Hero() {
 
                                 </div>
 
+
                                 <div>
 
                                     <strong>
@@ -233,6 +280,7 @@ function Hero() {
 
                                 </div>
 
+
                                 <div className="file-success">
 
                                     ✓
@@ -244,6 +292,7 @@ function Hero() {
 
 
                             <div className="conversion-line">
+
 
                                 <div className="conversion-line-bar">
 
@@ -265,11 +314,13 @@ function Hero() {
 
                             <div className="hero-file-card result-file">
 
+
                                 <div className="hero-file-icon pdf-result-icon">
 
                                     PDF
 
                                 </div>
+
 
                                 <div>
 
@@ -282,6 +333,7 @@ function Hero() {
                                     </span>
 
                                 </div>
+
 
                                 <div className="file-success">
 
@@ -314,7 +366,9 @@ function Hero() {
 
 
 
-                    {/* FLOATING TOOL CARD */}
+                    {/* =================================
+                        RESIZE FLOATING CARD
+                    ================================= */}
 
                     <div className="floating-tool-card resize-floating-card">
 
@@ -323,6 +377,7 @@ function Hero() {
                             ↔
 
                         </div>
+
 
                         <div>
 
@@ -340,6 +395,10 @@ function Hero() {
 
 
 
+                    {/* =================================
+                        PRIVACY FLOATING CARD
+                    ================================= */}
+
                     <div className="floating-tool-card privacy-floating-card">
 
                         <div className="floating-icon security-icon">
@@ -347,6 +406,7 @@ function Hero() {
                             ✓
 
                         </div>
+
 
                         <div>
 
@@ -374,3 +434,6 @@ function Hero() {
 
 
 export default Hero;
+
+
+//chnagees added for home page in this

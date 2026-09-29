@@ -1182,29 +1182,21 @@ function Navbar() {
 
 
 
-                    <button
+                   <button
+                       type="button"
+                       className="start-button"
+                       onClick={() =>
+                           goTo(
+                               "/resize-image"
+                           )
+                       }
+                   >
+                       Start Converting
 
-                        type="button"
-
-                        className="start-button"
-
-                        onClick={() =>
-                            goTo(
-                                "/resize-image"
-                            )
-                        }
-
-                    >
-
-                        Start Converting
-
-                        <span>
-
-                            →
-
-                        </span>
-
-                    </button>
+                       <span>
+                           →
+                       </span>
+                   </button>
 
 
 
