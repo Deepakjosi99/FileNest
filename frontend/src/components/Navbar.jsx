@@ -1190,7 +1190,7 @@ function Navbar() {
 
                         onClick={() =>
                             goTo(
-                                "/image-to-pdf"
+                                "/resize-image"
                             )
                         }
 
