@@ -20,7 +20,7 @@ function PrivacyPage() {
                     </h1>
 
                     <p>
-                        Last updated: September 28, 2026
+                        Last updated: September 30, 2026
                     </p>
 
                 </div>
@@ -33,14 +33,15 @@ function PrivacyPage() {
                     </h2>
 
                     <p>
-                        FileNest provides free online PDF and
-                        image tools designed to process supported
-                        files directly inside your web browser.
+                        FileNest provides free PDF and image
+                        tools that are built to work directly
+                        in your browser.
                     </p>
 
                     <p>
-                        We aim to keep FileNest simple, private
-                        and transparent about how the service works.
+                        We want FileNest to stay simple and
+                        useful, while also being clear about
+                        what happens when you use the website.
                     </p>
 
                 </section>
@@ -49,21 +50,20 @@ function PrivacyPage() {
                 <section className="legal-section">
 
                     <h2>
-                        File processing
+                        How your files are processed
                     </h2>
 
                     <p>
-                        FileNest tools such as Image to PDF,
+                        Tools such as Image to PDF,
                         PDF to JPG, Resize Image, Merge PDF
                         and Split PDF are designed to process
-                        files locally in your browser.
+                        your files directly in your browser.
                     </p>
 
                     <p>
-                        Files selected for these browser-based
-                        tools do not need to be uploaded to a
-                        FileNest application server in order
-                        to perform the conversion or processing.
+                        This means your selected files do not
+                        need to be sent to a FileNest server
+                        for the conversion or processing to work.
                     </p>
 
                     <div className="legal-highlight">
@@ -74,8 +74,8 @@ function PrivacyPage() {
 
                         <p>
                             Your supported PDF and image files
-                            are processed on your device by
-                            your browser.
+                            stay on your device while the tool
+                            processes them in your browser.
                         </p>
 
                     </div>
@@ -90,20 +90,19 @@ function PrivacyPage() {
                     </h2>
 
                     <p>
-                        When you access FileNest, our hosting
-                        and infrastructure providers may process
-                        standard technical information required
-                        to deliver the website.
+                        Like most websites, some basic technical
+                        information may be handled automatically
+                        when you visit FileNest.
                     </p>
 
                     <p>
-                        This can include information such as:
+                        This may include:
                     </p>
 
                     <ul>
 
                         <li>
-                            IP address
+                            Your IP address
                         </li>
 
                         <li>
@@ -111,22 +110,23 @@ function PrivacyPage() {
                         </li>
 
                         <li>
-                            Requested pages
+                            Pages you visit
                         </li>
 
                         <li>
-                            Date and time of requests
+                            Date and time of your request
                         </li>
 
                         <li>
-                            Basic security and diagnostic data
+                            Basic security and diagnostic information
                         </li>
 
                     </ul>
 
                     <p>
-                        This type of information may be processed
-                        automatically as part of normal web hosting,
+                        This information can be processed by
+                        our hosting and infrastructure providers
+                        as part of normal website delivery,
                         security and network operation.
                     </p>
 
@@ -140,9 +140,9 @@ function PrivacyPage() {
                     </h2>
 
                     <p>
-                        FileNest currently does not require users
-                        to create an account to use the available
-                        PDF and image tools.
+                        You currently do not need to create
+                        an account or sign in to use the
+                        available FileNest tools.
                     </p>
 
                 </section>
@@ -151,20 +151,28 @@ function PrivacyPage() {
                 <section className="legal-section">
 
                     <h2>
-                        Cookies and analytics
+                        Cookies
                     </h2>
 
                     <p>
-                        FileNest may use essential technologies
-                        required for website operation.
+                        FileNest may use cookies or similar
+                        browser technologies when they are
+                        needed for things such as website
+                        operation, security or preferences.
                     </p>
 
                     <p>
-                        If analytics, advertising or other
-                        third-party services are added in the
-                        future, this Privacy Policy will be
-                        updated to explain what information
-                        those services collect and how it is used.
+                        Some third-party services used on
+                        FileNest may also use cookies or
+                        similar technologies.
+                    </p>
+
+                    <p>
+                        If advertising is enabled, cookies
+                        may also be used to show ads,
+                        measure their performance, prevent
+                        fraud and avoid showing the same
+                        advertisement too often.
                     </p>
 
                 </section>
@@ -173,25 +181,96 @@ function PrivacyPage() {
                 <section className="legal-section">
 
                     <h2>
-                        Advertising
+                        Google AdSense and advertising
                     </h2>
 
                     <p>
-                        FileNest may display advertising in the
-                        future.
+                        FileNest may use Google AdSense to
+                        help support the website by displaying
+                        advertisements.
                     </p>
 
                     <p>
-                        If advertising services such as Google
-                        AdSense are introduced, those providers
-                        may use cookies or similar technologies
-                        according to their own policies and
-                        applicable consent requirements.
+                        If AdSense is enabled, Google and its
+                        advertising partners may use cookies
+                        to show ads and understand how those
+                        ads perform.
                     </p>
 
                     <p>
-                        This policy will be updated before or
-                        when such advertising features are enabled.
+                        Some advertisements may be based on
+                        your previous visits to FileNest or
+                        other websites.
+                    </p>
+
+                    <p>
+                        Depending on your location, settings
+                        and consent choices, you may see
+                        personalized or non-personalized ads.
+                    </p>
+
+                </section>
+
+
+                <section className="legal-section">
+
+                    <h2>
+                        Your advertising choices
+                    </h2>
+
+                    <p>
+                        You can manage how Google uses your
+                        information for personalized advertising
+                        through Google Ads Settings.
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://adssettings.google.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Manage Google Ads Settings
+                        </a>
+                    </p>
+
+                    <p>
+                        You can also learn more about how
+                        Google uses information from websites
+                        and apps that use its services.
+                    </p>
+
+                    <p>
+                        <a
+                            href="https://policies.google.com/technologies/partner-sites"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Learn how Google uses information
+                            from partner sites
+                        </a>
+                    </p>
+
+                </section>
+
+
+                <section className="legal-section">
+
+                    <h2>
+                        Your consent choices
+                    </h2>
+
+                    <p>
+                        In places where consent is required,
+                        FileNest may ask for your permission
+                        before certain advertising cookies
+                        or similar technologies are used.
+                    </p>
+
+                    <p>
+                        A consent message may also give you
+                        options to accept, reject or manage
+                        certain advertising choices.
                     </p>
 
                 </section>
@@ -204,16 +283,16 @@ function PrivacyPage() {
                     </h2>
 
                     <p>
-                        FileNest is hosted using third-party
-                        infrastructure and may rely on external
-                        services for website delivery, security
-                        and related functionality.
+                        FileNest uses third-party services
+                        for things such as hosting, website
+                        delivery, security and, when enabled,
+                        advertising.
                     </p>
 
                     <p>
-                        Those providers may process technical
-                        information according to their own
-                        privacy policies.
+                        These providers may process basic
+                        technical information according to
+                        their own privacy policies.
                     </p>
 
                 </section>
@@ -226,14 +305,15 @@ function PrivacyPage() {
                     </h2>
 
                     <p>
-                        FileNest may contain links to external
-                        websites.
+                        FileNest may sometimes include links
+                        to other websites.
                     </p>
 
                     <p>
-                        We are not responsible for the privacy
-                        practices, content or policies of
-                        third-party websites.
+                        Once you leave FileNest, the privacy
+                        practices and content of those websites
+                        are controlled by their respective
+                        owners.
                     </p>
 
                 </section>
@@ -246,15 +326,15 @@ function PrivacyPage() {
                     </h2>
 
                     <p>
-                        FileNest is a general-purpose file utility
-                        service and is not specifically directed
-                        toward children.
+                        FileNest is a general-purpose file
+                        utility website and is not specifically
+                        created for children.
                     </p>
 
                     <p>
-                        We do not intentionally ask users to
-                        provide personal information through
-                        the current file-processing tools.
+                        Our current file tools do not ask users
+                        to provide personal information in order
+                        to process their PDF or image files.
                     </p>
 
                 </section>
@@ -267,15 +347,15 @@ function PrivacyPage() {
                     </h2>
 
                     <p>
-                        We may update this Privacy Policy when
-                        FileNest adds new functionality,
-                        analytics, advertising, third-party
-                        integrations or other features.
+                        FileNest may update this Privacy Policy
+                        when we add new tools, advertising,
+                        analytics or other services.
                     </p>
 
                     <p>
-                        The latest version will be available
-                        on this page with the updated date.
+                        When we make changes, the latest version
+                        will be published on this page and the
+                        date at the top will be updated.
                     </p>
 
                 </section>
@@ -284,13 +364,13 @@ function PrivacyPage() {
                 <section className="legal-section">
 
                     <h2>
-                        Contact
+                        Contact us
                     </h2>
 
                     <p>
-                        If you have questions regarding this
-                        Privacy Policy, you can contact FileNest
-                        through the Contact page.
+                        If you have a question about this
+                        Privacy Policy, you can reach us
+                        through the FileNest Contact page.
                     </p>
 
                 </section>

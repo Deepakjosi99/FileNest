@@ -10,7 +10,7 @@ function ContactPage() {
      * you want FileNest users to contact.
      */
     const contactEmail =
-        "writedjo@gmail.com";
+        "filenest.tools@gmail.com";
 
 
     const openEmail =
