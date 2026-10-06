@@ -25,7 +25,7 @@ function TermsPage() {
                     </h1>
 
                     <p>
-                        Last updated: September 28, 2026
+                        Last updated: October 6, 2026
                     </p>
 
                 </div>
@@ -346,15 +346,18 @@ function TermsPage() {
                     </h2>
 
                     <p>
-                        FileNest may introduce advertising or
-                        sponsored content in the future.
+                        FileNest may display advertisements
+                        or sponsored content to help support
+                        the development and operation of the
+                        website.
                     </p>
 
                     <p>
-                        Advertising services may be provided by
-                        third-party advertising platforms and
-                        may be subject to their own terms,
-                        policies and consent requirements.
+                        Advertising may be provided by
+                        third-party services such as Google
+                        AdSense. These services may have their
+                        own terms, privacy policies and consent
+                        requirements.
                     </p>
 
                 </section>
