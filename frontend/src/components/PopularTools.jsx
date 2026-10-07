@@ -54,6 +54,24 @@ function PopularTools() {
 
             icon: "↓",
 
+            title: "Compress Image",
+
+            description:
+                "Reduce JPG, PNG and WebP image file size.",
+
+            status: "live",
+
+            category: "Image",
+
+            path: "/compress-image"
+        },
+
+
+        {
+            id: 4,
+
+            icon: "↓",
+
             title: "Compress PDF",
 
             description:
@@ -66,7 +84,7 @@ function PopularTools() {
 
 
         {
-            id: 4,
+            id: 5,
 
             icon: "M",
 
@@ -84,7 +102,7 @@ function PopularTools() {
 
 
         {
-            id: 5,
+            id: 6,
 
             icon: "S",
 
@@ -102,7 +120,7 @@ function PopularTools() {
 
 
         {
-            id: 6,
+            id: 7,
 
             icon: "JPG",
 

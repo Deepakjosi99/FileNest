@@ -1106,7 +1106,25 @@ function Navbar() {
 
                                 {/* COMPRESS IMAGE */}
 
-                                <div className="dropdown-tool disabled-tool">
+                                <button
+
+                                    type="button"
+
+                                    className={
+                                        isActive(
+                                            "/compress-image"
+                                        )
+                                            ? "dropdown-tool active-dropdown-tool"
+                                            : "dropdown-tool"
+                                    }
+
+                                    onClick={() =>
+                                        goTo(
+                                            "/compress-image"
+                                        )
+                                    }
+
+                                >
 
                                     <div className="dropdown-icon image-icon">
 
@@ -1128,13 +1146,13 @@ function Navbar() {
                                     </div>
 
 
-                                    <span className="soon-badge">
+                                    <span className="live-badge">
 
-                                        SOON
+                                        LIVE
 
                                     </span>
 
-                                </div>
+                                </button>
 
                             </div>
 
@@ -1399,17 +1417,28 @@ function Navbar() {
 
                         {/* COMPRESS IMAGE */}
 
-                        <div className="mobile-coming">
+                        <button
+
+                            type="button"
+
+                            onClick={() =>
+                                goTo(
+                                    "/compress-image"
+                                )
+                            }
+
+                        >
 
                             Compress Image
 
-                            <span>
 
-                                Soon
+                            <span className="live-badge">
+
+                                LIVE
 
                             </span>
 
-                        </div>
+                        </button>
 
 
 

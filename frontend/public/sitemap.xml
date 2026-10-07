@@ -15,6 +15,10 @@
     </url>
 
     <url>
+        <loc>https://tools.fileconverters.workers.dev/compress-image</loc>
+    </url>
+
+    <url>
         <loc>https://tools.fileconverters.workers.dev/merge-pdf</loc>
     </url>
 

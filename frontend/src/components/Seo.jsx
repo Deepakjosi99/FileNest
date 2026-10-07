@@ -31,7 +31,7 @@ function Seo() {
                 "FileNest - Free PDF & Image Tools Online",
 
             description:
-                "Free online PDF and image tools. Convert images to PDF, merge PDFs, split PDFs, resize images and convert PDF pages to JPG directly in your browser."
+                "Free online PDF and image tools. Convert images to PDF, compress and resize images, merge PDFs, split PDFs and convert PDF pages to JPG directly in your browser."
 
         },
 
@@ -65,6 +65,17 @@ function Seo() {
 
             description:
                 "Resize JPG and PNG images online for free. Change image width and height quickly using FileNest without installing software."
+
+        },
+
+
+        "/compress-image": {
+
+            title:
+                "Compress Image Online - Reduce JPG, PNG & WebP Size | FileNest",
+
+            description:
+                "Compress JPG, PNG and WebP images online for free. Reduce image file size and adjust quality directly in your browser with FileNest."
 
         },
 

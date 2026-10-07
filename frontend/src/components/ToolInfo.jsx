@@ -188,6 +188,67 @@ const toolContent = {
     },
 
 
+    "/compress-image": {
+
+        title:
+            "Free Online Image Compressor",
+
+        intro:
+            "Compress JPG, PNG and WebP images directly in your browser. Adjust image quality, choose an output format and optionally reduce image dimensions before downloading.",
+
+        steps: [
+            "Select or drop your image.",
+            "Choose your preferred quality level.",
+            "Choose the output format if needed.",
+            "Optionally set maximum image dimensions.",
+            "Compress and download your image."
+        ],
+
+        benefits: [
+            "Supports JPG, PNG and WebP",
+            "Adjust image quality",
+            "Choose JPG, PNG or WebP output",
+            "Optional image resizing",
+            "See original and compressed file size",
+            "Browser-based processing"
+        ],
+
+        faqs: [
+            {
+                question:
+                    "Which image formats can I compress?",
+
+                answer:
+                    "FileNest supports JPG, PNG and WebP images."
+            },
+
+            {
+                question:
+                    "Can I change the image format while compressing?",
+
+                answer:
+                    "Yes. You can keep the original format or choose JPG, PNG or WebP as the output format."
+            },
+
+            {
+                question:
+                    "Why does an image sometimes stay the same size?",
+
+                answer:
+                    "Some images are already well optimized. If processing would not make the file smaller, FileNest may keep the original file instead."
+            },
+
+            {
+                question:
+                    "Is my image uploaded to FileNest?",
+
+                answer:
+                    "No. The image is processed locally inside your browser."
+            }
+        ]
+    },
+
+
     "/merge-pdf": {
 
         title:
